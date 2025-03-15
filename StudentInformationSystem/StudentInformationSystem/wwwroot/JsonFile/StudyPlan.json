@@ -1,0 +1,24 @@
+{
+  "StudyPlanList": [
+    {
+      "Id": 1,
+      "StudyPlanName": "Compulsory university"
+    },
+    {
+      "Id": 2,
+      "StudyPlanName": "Compulsory section"
+    },
+    {
+      "Id": 3,
+      "StudyPlanName": "Optional university"
+    },
+    {
+      "Id": 4,
+      "StudyPlanName": "Compulsory college"
+    },
+    {
+      "Id": 5,
+      "StudyPlanName": "Elective department"
+    }
+  ]
+}

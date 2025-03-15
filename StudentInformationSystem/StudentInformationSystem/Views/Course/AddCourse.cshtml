@@ -1,0 +1,218 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model StudentInformationSystem.Utilities.Dto.AddCourseDto
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>​
+
+<div class="app-content content ">
+    <div class="content-overlay"></div>
+    <div class="header-navbar-shadow"></div>
+    <div class="content-wrapper">
+        <div class="content-header row">
+            <div class="content-header-left col-md-9 col-12 mb-2">
+                <div class="row breadcrumbs-top">
+                    <div class="col-12">
+                        <h2 class="content-header-title float-left mb-0">Course</h2>
+                        <div class="breadcrumb-wrapper">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="@Url.Action("Index","DashBoard")">DashBoard</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="@Url.Action("AddCourse","Course")">Add-Course</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row" id="table-responsive">
+            <div class="col-12">
+                <div class="card">
+                    @using (Html.BeginForm("AddCourse", "Course", FormMethod.Post, new { id = "GetCourse", @class = "form" }))
+                    {
+                        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+                        <div class="row mt-5 mb-1">
+                            <div class="col-md-6 ">
+                                <div class="form-group ml-1 mr-1">
+                                    <label for="CourseNumber" style="font-weight:700;margin-bottom:5px;">Course Number</label>
+                                    @if (ViewBag.CourseCharacterList  != null)
+                                    {
+                                            @* <select class="custom-select" style="margin-bottom:5px;" asp-for="RegisterCourse.CourseNumber" type="text" id="CourseNumber" onchange="GetData()"> *@
+                                        <select class="custom-select" style="margin-bottom:5px;" asp-for="RegisterCourse.CourseNumber" type="text" id="CourseNumber">
+                                                <option value="" selected>Select Course Number</option>
+                                                @foreach (var item in ViewBag.CourseCharacterList)
+                                                {
+                                                    <option value="@item.CourseNumber">@item.CourseNumber</option>
+                                                }
+                                        </select>
+                                    }
+                                    <span asp-validation-for="RegisterCourse.CourseNumber" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class=" col-md-6">
+                                <div class="form-group ml-1 mr-1">
+                                    <label for="CourseCharacters" style="font-weight:700;margin-bottom:5px ;">Course Characters</label>
+                                    <input asp-for="RegisterCourse.CourseCharacters" style="margin-bottom:5px;" type="text"  class="form-control" />
+                                    <span asp-validation-for="RegisterCourse.CourseCharacters" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group ml-1 mr-1">
+                                    <label for="CourseName" style="font-weight:700;margin-bottom:5px;">Course Name</label>
+                                    <input asp-for="RegisterCourse.CourseName" style="margin-bottom:5px;" type="text"  class="form-control" />
+                                    <span asp-validation-for="RegisterCourse.CourseName" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group ml-1 mr-1">
+                                    <label for="Section" style="font-weight:700;margin-bottom:5px;">Section</label>
+                                    <input asp-for="RegisterCourse.Section" style="margin-bottom:5px;" type="text" class="form-control" />
+                                    <span asp-validation-for="RegisterCourse.Section" class="text-danger"></span>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="row">
+                                     <div class="col-md-6">
+                                        <div class="form-group ml-1 mr-1">
+                                           <label for="Semester" style="font-weight:700;margin-bottom:5px;">Semester</label>
+                                            @if (ViewBag.SemesterList != null)
+                                            {
+                                                <select class="custom-select" style="margin-bottom:5px;" asp-for="RegisterCourse.SemesterId" id="Semester">
+                                                    <option value="" selected>Select Semester</option>
+                                                    @foreach (var Semester in ViewBag.SemesterList)
+                                                    {
+                                                        <option value="@Semester.Id">@Semester.SemesterName</option>
+                                                    }
+                                                </select>
+                                            }
+                                           <span asp-validation-for="RegisterCourse.SemesterId" class="text-danger"></span>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group ml-1 mr-1">
+                                    <dnt-captcha 
+                                        asp-captcha-generator-max="999999" 
+                                        asp-captcha-generator-min="111111" 
+                                        asp-captcha-generator-language="English"
+                                        asp-captcha-generator-display-mode="ShowDigits"
+                                        asp-use-relative-urls="true"
+                                        asp-placeholder="Enter Captcha"
+                                        asp-font-name="Tahoma"
+                                        asp-font-size="60"
+                                        asp-fore-color="#333333"
+                                        asp-validation-error-message="Please Insert Valid Captcha"
+                                        asp-back-color="#ccc"
+                                        asp-text-box-class="text-box form-control"
+                                        asp-text-box-template="<span class='input-group-prepend'><span class='form-group-text'> </span></span>{0}"
+                                        asp-refresh-button-class="fa fa-refresh btn-sm"
+                                        asp-use-noise="false"/>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group ml-1 mr-1">
+                                     <button type="submit" class="btn btn-primary mr-1">Register Course</button>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                    <div class="row mt-5 mb-5">
+                        <div class="table-responsive">
+                            <table class="table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="text-nowrap">Course Characters</th>
+                                        <th scope="col" class="text-nowrap">Course Number</th>
+                                        <th scope="col" class="text-nowrap">Course Name</th>
+                                        <th scope="col" class="text-nowrap">Section </th>
+                                        <th scope="col" class="text-nowrap">Action </th>
+                                       
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    @if (Model != null && Model.CourseList.Count > 0)
+                                    {
+                                        foreach (var item in Model.CourseList)
+                                        {
+                                            <tr>
+                                                <td class="text-nowrap">@item.CourseCharacters</td>
+                                                <td class="text-nowrap">@item.CourseNumber</td>
+                                                <td class="text-nowrap">@item.CourseName</td>
+                                                <td class="text-nowrap">@item.Section</td>
+                                                <td>
+                                                    <button class="btn btn-danger" onclick="confirmDropCourse('@item.Id')">Drop Course</button>
+                                                </td>
+                                            </tr>
+                                        }
+                                    }else{
+                                        <tr>
+                                            <td class="text-nowrap" colspan="17">No Data Found</td>
+                                       
+                                        </tr>
+                                    }
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@section scripts {
+    <script>
+        function confirmDropCourse(courseId) {
+            if (confirm("Are you sure you want to drop this course?")) {
+                window.location.href = '@Url.Action("DropCourse", "Course")?courseId=' + courseId;
+            }
+        }
+        function GetData() {
+            var data = document.getElementById('CourseNumber').value
+            $.ajax({
+            url: '/Course/GetCourseByCourseNumber?CourseNumber='+data,
+            type: "get",
+            cache: false,
+            async: false,
+            //data: { 'Name': Name, 'IsActive': IsActive, 'PageIndex': PageIndex },
+            success: function (Data) {
+                debugger
+                if (Data!= '') {
+                    // document.getElementById('CourseName').value =Data.courseName
+                    // document.getElementById('Section').value =Data.section
+                    // document.getElementById('CourseNumber').value =Data.courseNumber
+                }
+
+            },
+            error: function (exception) {
+               
+            }
+        });
+
+        }
+       @if (TempData["Notification"] != null)
+        {
+            <text>
+            debugger;
+                let notification = '@TempData["Notification"]';
+                alert(notification);
+
+                if (notification === "Successfully Registered Course") {
+                    var form = document.getElementById('GetCourse');
+                form.reset();
+
+                $('#GetCourse').find('input:text, select').val('');
+                $('#GetCourse').find('input:radio, input:checkbox').prop('checked', false);
+
+                $('#GetCourse').find('.text-danger').html('');
+                $('#GetCourse').find('.is-invalid').removeClass('is-invalid');
+                }
+            </text>
+        }
+    </script>
+}
+

@@ -1,0 +1,580 @@
+{
+  "MarksList": [
+    {
+      "Id": 1,
+      "RegisteredCourseId": 1,
+      "FirstMarks": 24,
+      "SecondMarks": 24,
+      "FinalMarks": 88,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 2,
+      "RegisteredCourseId": 2,
+      "FirstMarks": 22,
+      "SecondMarks": 22,
+      "FinalMarks": 80,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 3,
+      "RegisteredCourseId": 3,
+      "FirstMarks": 15,
+      "SecondMarks": 25,
+      "FinalMarks": 90,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 4,
+      "RegisteredCourseId": 4,
+      "FirstMarks": 25,
+      "SecondMarks": 25,
+      "FinalMarks": 100,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 5,
+      "RegisteredCourseId": 5,
+      "FirstMarks": 22,
+      "SecondMarks": 22,
+      "FinalMarks": 84,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 6,
+      "RegisteredCourseId": 6,
+      "FirstMarks": 15,
+      "SecondMarks": 15,
+      "FinalMarks": 66,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 7,
+      "RegisteredCourseId": 7,
+      "FirstMarks": 19,
+      "SecondMarks": 19,
+      "FinalMarks": 80,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 8,
+      "RegisteredCourseId": 8,
+      "FirstMarks": 10,
+      "SecondMarks": 10,
+      "FinalMarks": 48,
+      "MarksStatus": "Failed"
+    },
+    {
+      "Id": 9,
+      "RegisteredCourseId": 9,
+      "FirstMarks": 21,
+      "SecondMarks": 21,
+      "FinalMarks": 88,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 10,
+      "RegisteredCourseId": 10,
+      "FirstMarks": 22,
+      "SecondMarks": 22,
+      "FinalMarks": 80,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 11,
+      "RegisteredCourseId": 11,
+      "FirstMarks": 25,
+      "SecondMarks": 25,
+      "FinalMarks": 100,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 12,
+      "RegisteredCourseId": 12,
+      "FirstMarks": 10,
+      "SecondMarks": 17,
+      "FinalMarks": 67,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 13,
+      "RegisteredCourseId": 13,
+      "FirstMarks": 22,
+      "SecondMarks": 22,
+      "FinalMarks": 84,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 14,
+      "RegisteredCourseId": 14,
+      "FirstMarks": 15,
+      "SecondMarks": 15,
+      "FinalMarks": 66,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 15,
+      "RegisteredCourseId": 15,
+      "FirstMarks": 19,
+      "SecondMarks": 19,
+      "FinalMarks": 50,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 16,
+      "RegisteredCourseId": 16,
+      "FirstMarks": 10,
+      "SecondMarks": 10,
+      "FinalMarks": 45,
+      "MarksStatus": "Failed"
+    },
+    {
+      "Id": 17,
+      "RegisteredCourseId": 17,
+      "FirstMarks": 21,
+      "SecondMarks": 23,
+      "FinalMarks": 88,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 18,
+      "RegisteredCourseId": 18,
+      "FirstMarks": 22,
+      "SecondMarks": 22,
+      "FinalMarks": 80,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 19,
+      "RegisteredCourseId": 19,
+      "FirstMarks": 25,
+      "SecondMarks": 25,
+      "FinalMarks": 100,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 20,
+      "RegisteredCourseId": 20,
+      "FirstMarks": 5,
+      "SecondMarks": 9,
+      "FinalMarks": 35,
+      "MarksStatus": "Failed"
+    },
+    {
+      "Id": 21,
+      "RegisteredCourseId": 21,
+      "FirstMarks": 22,
+      "SecondMarks": 22,
+      "FinalMarks": 84,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 22,
+      "RegisteredCourseId": 22,
+      "FirstMarks": 15,
+      "SecondMarks": 15,
+      "FinalMarks": 66,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 23,
+      "RegisteredCourseId": 23,
+      "FirstMarks": 19,
+      "SecondMarks": 19,
+      "FinalMarks": 80,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 24,
+      "RegisteredCourseId": 24,
+      "FirstMarks": 10,
+      "SecondMarks": 10,
+      "FinalMarks": 43,
+      "MarksStatus": "Failed"
+    },
+    {
+      "Id": 25,
+      "RegisteredCourseId": 25,
+      "FirstMarks": 19,
+      "SecondMarks": 14,
+      "FinalMarks": 78,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 26,
+      "RegisteredCourseId": 26,
+      "FirstMarks": 22,
+      "SecondMarks": 22,
+      "FinalMarks": 80,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 27,
+      "RegisteredCourseId": 27,
+      "FirstMarks": 25,
+      "SecondMarks": 25,
+      "FinalMarks": 90,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 28,
+      "RegisteredCourseId": 28,
+      "FirstMarks": 25,
+      "SecondMarks": 25,
+      "FinalMarks": 100,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 29,
+      "RegisteredCourseId": 29,
+      "FirstMarks": 22,
+      "SecondMarks": 22,
+      "FinalMarks": 84,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 30,
+      "RegisteredCourseId": 30,
+      "FirstMarks": 15,
+      "SecondMarks": 15,
+      "FinalMarks": 66,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 31,
+      "RegisteredCourseId": 31,
+      "FirstMarks": 19,
+      "SecondMarks": 19,
+      "FinalMarks": 80,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 32,
+      "RegisteredCourseId": 32,
+      "FirstMarks": 10,
+      "SecondMarks": 10,
+      "FinalMarks": 44,
+      "MarksStatus": "Failed"
+    },
+    {
+      "Id": 33,
+      "RegisteredCourseId": 33,
+      "FirstMarks": 14,
+      "SecondMarks": 12,
+      "FinalMarks": 52,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 34,
+      "RegisteredCourseId": 34,
+      "FirstMarks": 22,
+      "SecondMarks": 22,
+      "FinalMarks": 80,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 35,
+      "RegisteredCourseId": 35,
+      "FirstMarks": 25,
+      "SecondMarks": 25,
+      "FinalMarks": 100,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 36,
+      "RegisteredCourseId": 36,
+      "FirstMarks": 7,
+      "SecondMarks": 14,
+      "FinalMarks": 36,
+      "MarksStatus": "Failed"
+    },
+    {
+      "Id": 37,
+      "RegisteredCourseId": 37,
+      "FirstMarks": 22,
+      "SecondMarks": 22,
+      "FinalMarks": 84,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 38,
+      "RegisteredCourseId": 38,
+      "FirstMarks": 15,
+      "SecondMarks": 15,
+      "FinalMarks": 66,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 39,
+      "RegisteredCourseId": 39,
+      "FirstMarks": 19,
+      "SecondMarks": 19,
+      "FinalMarks": 80,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 40,
+      "RegisteredCourseId": 40,
+      "FirstMarks": 10,
+      "SecondMarks": 10,
+      "FinalMarks": 42,
+      "MarksStatus": "Failed"
+    },
+    {
+      "Id": 41,
+      "RegisteredCourseId": 41,
+      "FirstMarks": 5,
+      "SecondMarks": 1,
+      "FinalMarks": 55,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 42,
+      "RegisteredCourseId": 42,
+      "FirstMarks": 22,
+      "SecondMarks": 22,
+      "FinalMarks": 80,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 43,
+      "RegisteredCourseId": 43,
+      "FirstMarks": 25,
+      "SecondMarks": 25,
+      "FinalMarks": 100,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 44,
+      "RegisteredCourseId": 44,
+      "FirstMarks": 6,
+      "SecondMarks": 12,
+      "FinalMarks": 55,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 45,
+      "RegisteredCourseId": 45,
+      "FirstMarks": 22,
+      "SecondMarks": 22,
+      "FinalMarks": 84,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 46,
+      "RegisteredCourseId": 46,
+      "FirstMarks": 15,
+      "SecondMarks": 15,
+      "FinalMarks": 66,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 47,
+      "RegisteredCourseId": 47,
+      "FirstMarks": 19,
+      "SecondMarks": 19,
+      "FinalMarks": 80,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 48,
+      "RegisteredCourseId": 48,
+      "FirstMarks": 10,
+      "SecondMarks": 10,
+      "FinalMarks": 35,
+      "MarksStatus": "Failed"
+    },
+    {
+      "Id": 49,
+      "RegisteredCourseId": 49,
+      "FirstMarks": 22,
+      "SecondMarks": 20,
+      "FinalMarks": 88,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 50,
+      "RegisteredCourseId": 50,
+      "FirstMarks": 13,
+      "SecondMarks": 0,
+      "FinalMarks": 35,
+      "MarksStatus": "Failed"
+    },
+    {
+      "Id": 51,
+      "RegisteredCourseId": 51,
+      "FirstMarks": 25,
+      "SecondMarks": 23,
+      "FinalMarks": 70,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 52,
+      "RegisteredCourseId": 52,
+      "FirstMarks": 11,
+      "SecondMarks": 11,
+      "FinalMarks": 50,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 53,
+      "RegisteredCourseId": 53,
+      "FirstMarks": 23,
+      "SecondMarks": 14,
+      "FinalMarks": 75,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 54,
+      "RegisteredCourseId": 54,
+      "FirstMarks": 14,
+      "SecondMarks": 16,
+      "FinalMarks": 64,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 55,
+      "RegisteredCourseId": 55,
+      "FirstMarks": 19,
+      "SecondMarks": 18,
+      "FinalMarks": 47,
+      "MarksStatus": "Failed"
+    },
+    {
+      "Id": 56,
+      "RegisteredCourseId": 56,
+      "FirstMarks": 14,
+      "SecondMarks": 19,
+      "FinalMarks": 42,
+      "MarksStatus": "Failed"
+    },
+    {
+      "Id": 57,
+      "RegisteredCourseId": 57,
+      "FirstMarks": 15,
+      "SecondMarks": 17,
+      "FinalMarks": 61,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 58,
+      "RegisteredCourseId": 58,
+      "FirstMarks": 24,
+      "SecondMarks": 21,
+      "FinalMarks": 90,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 59,
+      "RegisteredCourseId": 59,
+      "FirstMarks": 21,
+      "SecondMarks": 20,
+      "FinalMarks": 90,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 60,
+      "RegisteredCourseId": 60,
+      "FirstMarks": 20,
+      "SecondMarks": 20,
+      "FinalMarks": 80,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 61,
+      "RegisteredCourseId": 61,
+      "FirstMarks": 0,
+      "SecondMarks": 20,
+      "FinalMarks": 53,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 62,
+      "RegisteredCourseId": 62,
+      "FirstMarks": 23,
+      "SecondMarks": 19,
+      "FinalMarks": 47,
+      "MarksStatus": "Failed"
+    },
+    {
+      "Id": 63,
+      "RegisteredCourseId": 63,
+      "FirstMarks": 11,
+      "SecondMarks": 10,
+      "FinalMarks": 39,
+      "MarksStatus": "Failed"
+    },
+    {
+      "Id": 64,
+      "RegisteredCourseId": 64,
+      "FirstMarks": 14,
+      "SecondMarks": 1,
+      "FinalMarks": 50,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 65,
+      "RegisteredCourseId": 65,
+      "FirstMarks": 16,
+      "SecondMarks": 22,
+      "FinalMarks": 41,
+      "MarksStatus": "Failed"
+    },
+    {
+      "Id": 66,
+      "RegisteredCourseId": 66,
+      "FirstMarks": 18,
+      "SecondMarks": 25,
+      "FinalMarks": 86,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 67,
+      "RegisteredCourseId": 67,
+      "FirstMarks": 19,
+      "SecondMarks": 12,
+      "FinalMarks": 74,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 68,
+      "RegisteredCourseId": 68,
+      "FirstMarks": 17,
+      "SecondMarks": 22,
+      "FinalMarks": 73,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 69,
+      "RegisteredCourseId": 69,
+      "FirstMarks": 21,
+      "SecondMarks": 19,
+      "FinalMarks": 68,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 70,
+      "RegisteredCourseId": 70,
+      "FirstMarks": 20,
+      "SecondMarks": 10,
+      "FinalMarks": 80,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 71,
+      "RegisteredCourseId": 71,
+      "FirstMarks": 20,
+      "SecondMarks": 1,
+      "FinalMarks": 59,
+      "MarksStatus": "Pass"
+    },
+    {
+      "Id": 72,
+      "RegisteredCourseId": 72,
+      "FirstMarks": 20,
+      "SecondMarks": 22,
+      "FinalMarks": 81,
+      "MarksStatus": "Pass"
+    }
+  ]
+}

@@ -1,0 +1,135 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+@model StudentInformationSystem.Infrastructure.Entities.Student
+<style>
+    .jumbotron-flat {
+          background-color: solid #4DB8FFF;
+          height: 100%;
+          border: 1px solid #4DB8FF;
+          background: white;
+          width: 100%;
+          text-align: center;
+          overflow: auto;
+          color: var(--dark-color);
+    }
+
+    .paymentAmt {
+        color: var(--dark-color);
+        font-size: 80px; 
+    }
+
+    .centered {
+        text-align: center;
+    }
+
+    .title {
+         padding-top: 15px;   
+         color: var(--dark-color);
+    }
+</style>
+
+<div class="app-content content ">
+    <div class="content-overlay"></div>
+    <div class="header-navbar-shadow"></div>
+    <div class="content-wrapper">
+        <div class="content-header row">
+            <div class="content-header-left col-md-9 col-12 mb-2">
+                <div class="row breadcrumbs-top">
+                    <div class="col-12">
+                        <h2 class="content-header-title float-left mb-0">Profile</h2>
+                        <div class="breadcrumb-wrapper">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="@Url.Action("Index","DashBoard")">DashBoard</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="@Url.Action("Profile","DashBoard")">Profile</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+         </div>
+        <div class="content-body">
+            <!-- Basic multiple Column Form section start -->
+            <section id="multiple-column-form">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="card">
+                  
+                            <div class="card-body" style="padding-top:20px">
+                                <div class="container">
+
+                                    <div class="row">
+                                        <!-- left column -->
+                                        <div class="col-md-3">
+                                            <div class="text-center">
+                                                <h4>@Model.EnglishName</h4>
+                                                <img src="@Model.ImagePath" class="avatar img-circle" alt="avatar"style="width:230px;">
+                                            </div>
+                                        </div>
+
+                                        <!-- edit form column -->
+                                        <div class="col-md-9 personal-info">
+
+                                            <h3>Personal info</h3>
+                                            <div class="row">
+                                                <div class="col-md-6 mt-2">
+                                                    <label> <span style="font-weight:800">Name In Arabic :  </span>  @Model.ArabicName </label>
+                                                </div>
+   "                                             <div class="col-md-6 mt-2">
+                                                    <label> <span style="font-weight:800">Name In English :  </span> @Model.EnglishName  </label>
+                                                </div>
+                                                <div class="col-md-6 mt-2">
+                                                    <label> <span style="font-weight:800">Id Number : </span>  @Model.CollegeID </label>
+                                                </div>
+                                                <div class="col-md-6 mt-2">
+                                                <lbel> <span style="font-weight:800">Gender : </span> @Model.Gender   </label>
+                                                  </div> 
+                                                <div class="col-md-6 mt-2">
+                                                    <label> <span style="font-weight:800">Nationality : </span>  @Model.Nationality </label>
+                                                </div>
+                                                <div class="col-md-6 mt-2">
+                                                    <label> <span style="font-weight:800">Place Of Birth :  </span> @Model.PlaceOfBirth  </label>
+                                                </div>
+                                                <div class="col-md-6 mt-2">
+                                                    <label> <span style="font-weight:800">Birth Date : </span>   @Model.BirthDate</label>
+                                                </div>
+                                                <div class="col-md-6 mt-2">
+                                                    <label> <span style="font-weight:800">The College :  </span> @Model.CollegeName  </label>
+                                                </div>
+                                                <div class="col-md-6 mt-2">
+                                                    <label> <span style="font-weight:800">Specialization : </span>  @Model.Specilization </label>
+                                                </div>
+                                                <div class="col-md-6 mt-2">
+                                                    <lbel> <span style="font-weight:800">SubSpecialty :  </span>  @Model.SUbSpecilty </label>
+                                                </div> 
+                                                <div class="col-md-12 mt-2">
+                                                    <label class="text-center"> <span style="font-weight:800">The Language Track in the University's Optional University Plan </span>   </label>
+                                                </div>
+                                                <div class="col-md-6 mt-2">
+                                                    <label> <span style="font-weight:800">Academic Status:  </span> @Model.AcademicStatus </label>
+                                                </div>
+                                                <div class="col-md-6 mt-2">
+                                                    <label> <span style="font-weight:800">Cumulative :  </span>  @Model.CumulativeAverage </label>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+

@@ -1,0 +1,445 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>​
+@model StudentInformationSystem.Utilities.Dto.StudyPlanCoursesListDto
+<div class="app-content content ">
+    <div class="content-overlay"></div>
+    <div class="header-navbar-shadow"></div>
+    <div class="content-wrapper">
+        <div class="content-header row">
+            <div class="content-header-left col-md-9 col-12 mb-2">
+                <div class="row breadcrumbs-top">
+                    <div class="col-12">
+                        <h2 class="content-header-title float-left mb-0">Study Plan</h2>
+                        <div class="breadcrumb-wrapper">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="index.html">DashBoard</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="#">Study Plan</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+       <section id="accordion-with-margin">
+          <div class="row">
+            <div class="col-sm-12">
+                <div class="card collapse-icon">
+                <div class="card-header">
+                </div>
+                    <div class="card-body">
+                    <div class="collapse-margin" id="accordionExample">
+                        <div class="card">
+                            <div
+                            class="card-header d-flex justify-content-between align-items-center"
+                            id="headingOne"
+                            data-toggle="collapse"
+                            role="button"
+                            data-target="#collapseOne"
+                            aria-expanded="false"
+                            aria-controls="collapseOne"
+                            >
+                            <span class="lead collapse-title">Compulsory University </span>
+                             @if(Model.CompulsoryUniversityTotalCredits != null)
+                            {
+                                <div style="background-color: darkgrey; color: white; padding: 5px 10px; border-radius: 5px;">
+                                    @Model.CompulsoryUniversityTotalCredits
+                                </div>
+                            }
+                            </div>
+                            <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+                            <div class="card-body">
+                                    <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="text-nowrap">Course Code</th>
+                                            <th scope="col" class="text-nowrap">Course Number</th>
+                                            <th scope="col" class="text-nowrap">The Description</th>
+                                            <th scope="col" class="text-nowrap">the number of Hour </th>
+                                            <th scope="col" class="text-nowrap">He Study it?</th>
+                                            <th scope="col" class="text-nowrap">To register a Course </th>
+                                        
+                                       
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                  
+                                         @if(Model.CompulsoryUniversity !=null){
+                                            foreach (var item in Model.CompulsoryUniversity)
+                                            {
+                                                <tr>
+                                                    <td class="text-nowrap">@item.CourseCode</td>
+                                                    <td class="text-nowrap">@item.CourseNumber</td>
+                                                    <td class="text-nowrap">@item.CourseName</td>
+                                                    <td class="text-nowrap">@item.Credits</td>
+                                                    <td class="text-nowrap">@item.HeStudyIt</td>
+                                                    <td class="text-nowrap"><a href="@Url.Action("CheckCourse", "StudyPlan", new { courseId = item.Id })" class="btn btn-primary">Register</a></td>
+                                                </tr>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td class="text-nowrap" colspan="11">No Data Found</td>
+                                            </tr>
+                                        }
+                                                    
+                                    
+                               
+                               
+                                    </tbody>
+                                </table>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card">
+                            <div
+                            class="card-header d-flex justify-content-between align-items-center"
+                            id="headingTwo"
+                            data-toggle="collapse"
+                            role="button"
+                            data-target="#collapseTwo"
+                            aria-expanded="false"
+                            aria-controls="collapseTwo"
+                            >
+                            <span class="lead collapse-title"> Compulsory Section</span>
+                            @if(Model.CompulsorySectionTotalCredits != null)
+                            {
+                                <div style="background-color: darkgrey; color: white; padding: 5px 10px; border-radius: 5px;">
+                                    @Model.CompulsorySectionTotalCredits
+                                </div>
+                            }
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                            <div class="card-body">
+                                    <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="text-nowrap">Course Code</th>
+                                            <th scope="col" class="text-nowrap">Course Number</th>
+                                            <th scope="col" class="text-nowrap">The Description</th>
+                                            <th scope="col" class="text-nowrap">the number of Hour </th>
+                                            <th scope="col" class="text-nowrap">He Study it?</th>
+                                            <th scope="col" class="text-nowrap">To register a Course </th>
+                                        
+                                       
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                  
+                                         @if(Model.CompulsorySection !=null){
+                                            foreach (var item in  Model.CompulsorySection)
+                                            {
+                                                <tr>
+                                                    <td class="text-nowrap">@item.CourseCode</td>
+                                                    <td class="text-nowrap">@item.CourseNumber</td>
+                                                    <td class="text-nowrap">@item.CourseName</td>
+                                                    <td class="text-nowrap">@item.Credits</td>
+                                                    <td class="text-nowrap">@item.HeStudyIt</td>
+                                                    <td class="text-nowrap"><a href="@Url.Action("CheckCourse", "StudyPlan", new { courseId = item.Id })" class="btn btn-primary">Register</a></td>
+                                                </tr>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td class="text-nowrap" colspan="11">No Data Found</td>
+                                            </tr>
+                                        }
+                               
+                               
+                                    </tbody>
+                                </table>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div
+                            class="card-header d-flex justify-content-between align-items-center"
+                            id="headingThree"
+                            data-toggle="collapse"
+                            role="button"
+                            data-target="#collapseThree"
+                            aria-expanded="false"
+                            aria-controls="collapseThree"
+                            >
+                            <span class="lead collapse-title"> Compulsory College </span>
+                            @if(Model.CompulsoryCollegeTotalCredits != null)
+                            {
+                                <div style="background-color: darkgrey; color: white; padding: 5px 10px; border-radius: 5px;">
+                                     @Model.CompulsoryCollegeTotalCredits
+                                </div>
+                            }
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="text-nowrap">Course Code</th>
+                                            <th scope="col" class="text-nowrap">Course Number</th>
+                                            <th scope="col" class="text-nowrap">The Description</th>
+                                            <th scope="col" class="text-nowrap">the number of Hour </th>
+                                            <th scope="col" class="text-nowrap">He Study it?</th>
+                                            <th scope="col" class="text-nowrap">To register a Course </th>
+                                        
+                                       
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                  
+                                       @if(Model.CompulsoryCollege !=null){
+                                            foreach (var item in Model.CompulsoryCollege)
+                                            {
+                                                <tr>
+                                                    <td class="text-nowrap">@item.CourseCode</td>
+                                                    <td class="text-nowrap">@item.CourseNumber</td>
+                                                    <td class="text-nowrap">@item.CourseName</td>
+                                                    <td class="text-nowrap">@item.Credits</td>
+                                                    <td class="text-nowrap">@item.HeStudyIt</td>
+                                                    <td class="text-nowrap"><a href="@Url.Action("CheckCourse", "StudyPlan", new { courseId = item.Id })" class="btn btn-primary">Register</a></td>
+                                                </tr>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td class="text-nowrap" colspan="11">No Data Found</td>
+                                            </tr>
+                                        }
+                                                    
+                                    
+                               
+                               
+                                    </tbody>
+                                </table>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div
+                            class="card-header d-flex justify-content-between align-items-center"
+                            id="headingFour"
+                            data-toggle="collapse"
+                            role="button"
+                            data-target="#collapseFour"
+                            aria-expanded="false"
+                            aria-controls="collapseFour"
+                            >
+                            <span class="lead collapse-title"> Optional University </span>
+                            @if(Model.OptionalUniversityTotalCredits != null)
+                            {
+                                <div style="background-color: darkgrey; color: white; padding: 5px 10px; border-radius: 5px;">
+                                    @Model.OptionalUniversityTotalCredits
+                                </div>
+                            }
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                    <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="text-nowrap">Course Code</th>
+                                            <th scope="col" class="text-nowrap">Course Number</th>
+                                            <th scope="col" class="text-nowrap">The Description</th>
+                                            <th scope="col" class="text-nowrap">the number of Hour </th>
+                                            <th scope="col" class="text-nowrap">He Study it?</th>
+                                            <th scope="col" class="text-nowrap">To register a Course </th>
+                                        
+                                       
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                  
+                                       @if(Model.OptionalUniversity !=null){
+                                            foreach (var item in  Model.OptionalUniversity)
+                                            {
+                                                <tr>
+                                                    <td class="text-nowrap">@item.CourseCode</td>
+                                                    <td class="text-nowrap">@item.CourseNumber</td>
+                                                    <td class="text-nowrap">@item.CourseName</td>
+                                                    <td class="text-nowrap">@item.Credits</td>
+                                                    <td class="text-nowrap">@item.HeStudyIt</td>
+                                                    <td class="text-nowrap"><a href="@Url.Action("CheckCourse", "StudyPlan", new { courseId = item.Id })" class="btn btn-primary">Register</a></td>
+                                                </tr>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td class="text-nowrap" colspan="11">No Data Found</td>
+                                            </tr>
+                                        }
+                                       
+                                    
+                               
+                               
+                                    </tbody>
+                                </table>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div
+                            class="card-header d-flex justify-content-between align-items-center"
+                            id="headingFour"
+                            data-toggle="collapse"
+                            role="button"
+                            data-target="#collapseFour"
+                            aria-expanded="false"
+                            aria-controls="collapseFour"
+                            >
+                            <span class="lead collapse-title"> Elective Department </span>
+                            @if(Model.ElectiveDepartmentTotalCredits != null)
+                            {
+                                <div style="background-color: darkgrey; color: white; padding: 5px 10px; border-radius: 5px;">
+                                    @Model.ElectiveDepartmentTotalCredits
+                                </div>
+                            }
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                    <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="text-nowrap">Course Code</th>
+                                            <th scope="col" class="text-nowrap">Course Number</th>
+                                            <th scope="col" class="text-nowrap">The Description</th>
+                                            <th scope="col" class="text-nowrap">the number of Hour </th>
+                                            <th scope="col" class="text-nowrap">He Study it?</th>
+                                            <th scope="col" class="text-nowrap">To register a Course </th>
+                                        
+                                       
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                       @if(Model.ElectiveDepartment !=null){
+                                            foreach (var item in  Model.ElectiveDepartment)
+                                            {
+                                                <tr>
+                                                    <td class="text-nowrap">@item.CourseCode</td>
+                                                    <td class="text-nowrap">@item.CourseNumber</td>
+                                                    <td class="text-nowrap">@item.CourseName</td>
+                                                    <td class="text-nowrap">@item.Credits</td>
+                                                    <td class="text-nowrap">@item.HeStudyIt</td>
+                                                    <td class="text-nowrap"><a href="@Url.Action("CheckCourse", "StudyPlan", new { courseId = item.Id })" class="btn btn-primary">Register</a></td>
+                                                </tr>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td class="text-nowrap" colspan="11">No Data Found</td>
+                                            </tr>
+                                        }
+                                    
+                               
+                               
+                                    </tbody>
+                                </table>
+                            </div>
+                            </div>
+                            </div>
+                        </div>
+                       @*  <div class="card">
+                            <div
+                            class="card-header"
+                            id="headingFour"
+                            data-toggle="collapse"
+                            role="button"
+                            data-target="#collapseFour"
+                            aria-expanded="false"
+                            aria-controls="collapseFour"
+                            >
+                            <span class="lead collapse-title"> Off Plan </span>
+                            </div>
+                            <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                            <div class="card-body">
+                                    <div class="table-responsive">
+                                <table class="table mb-0">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col" class="text-nowrap">Course Code</th>
+                                            <th scope="col" class="text-nowrap">Course Number</th>
+                                            <th scope="col" class="text-nowrap">The Description</th>
+                                            <th scope="col" class="text-nowrap">the number of Hour </th>
+                                            <th scope="col" class="text-nowrap">He Study it</th>
+                                            <th scope="col" class="text-nowrap">Equivalent Course </th>
+                                            <th scope="col" class="text-nowrap">study the Equivalent Course </th>
+                                            <th scope="col" class="text-nowrap">Pre requisite </th>
+                                            <th scope="col" class="text-nowrap">the people presented </th>
+                                            <th scope="col" class="text-nowrap">To register a Course </th>
+                                        
+                                       
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                  
+                                        @if( ViewBag.CompulsorySection !=null){
+                                            foreach (var item in  ViewBag.CompulsorySection)
+                                            {
+                                                <tr>
+
+                                                    <td class="text-nowrap">@item.CourseCode</td>
+                                                    <td class="text-nowrap">@item.CourseNumber</td>
+                                                    <td class="text-nowrap">@item.CourseNumber</td>
+                                                    <td class="text-nowrap">@item.Credits</td>
+                                                  
+                                                </tr>
+                                            }
+                                        }
+                                        else
+                                        {
+                                            <tr>
+                                                <td class="text-nowrap" colspan="11">No Data Found</td>
+                                       
+                                            </tr>
+                                        }
+                               
+                               
+                                    </tbody>
+                                </table>
+                            </div>
+                            </div>
+                            </div>
+                        </div> *@
+                    </div>
+                </div>
+                </div>
+            </div>
+          </div>
+       </section>
+
+    </div>
+</div>
+
+@section Scripts {
+ <script>
+        $(document).ready(function () {
+            debugger;
+            var notification = '@(ViewBag.Notification ?? "")'; 
+            console.log("Notification:", notification); 
+            if (notification !== '') {
+                alert(notification);
+            }
+        });
+    </script>
+}   

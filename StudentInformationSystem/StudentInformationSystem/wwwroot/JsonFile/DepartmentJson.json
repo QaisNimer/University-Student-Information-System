@@ -1,0 +1,299 @@
+﻿{
+  "DepartmentList": [
+    {
+      "Id": 1,
+      "DepartmentName": "Computer engineering",
+      "Short": "CPE"
+    },
+    {
+      "Id": 2,
+      "DepartmentName": "Electronics engineering",
+      "Short": "ELE"
+    },
+    {
+      "Id": 3,
+      "DepartmentName": "Communications engineering",
+      "Short": "CME"
+    },
+    {
+      "Id": 4,
+      "DepartmentName": "Civil engineering",
+      "Short": "CEF"
+    },
+    {
+      "Id": 5,
+      "DepartmentName": "Biomedical engineering",
+      "Short": "BME"
+    },
+    {
+      "Id": 6,
+      "DepartmentName": "Industrial engineering",
+      "Short": "IEU"
+    },
+    {
+      "Id": 7,
+      "DepartmentName": "Electrical power engineering",
+      "Short": "EPE"
+    },
+    {
+      "Id": 8,
+      "DepartmentName": "Marketing",
+      "Short": "MKT"
+    },
+    {
+      "Id": 9,
+      "DepartmentName": "Law",
+      "Short": "L"
+    },
+    {
+      "Id": 10,
+      "DepartmentName": "Economy",
+      "Short": "ECON"
+    },
+    {
+      "Id": 11,
+      "DepartmentName": "Chemistry",
+      "Short": "CHEM"
+    },
+    {
+      "Id": 12,
+      "DepartmentName": "Physics",
+      "Short": "PHYS"
+    },
+    {
+      "Id": 13,
+      "DepartmentName": "Computer Science",
+      "Short": "CS"
+    },
+    {
+      "Id": 14,
+      "DepartmentName": "Statistics",
+      "Short": "STAT"
+    },
+    {
+      "Id": 15,
+      "DepartmentName": "mathematics",
+      "Short": "MATH"
+    },
+    {
+      "Id": 16,
+      "DepartmentName": "English Language and its literature",
+      "Short": "EL"
+    },
+    {
+      "Id": 17,
+      "DepartmentName": "Arabic language and its literature",
+      "Short": "AL"
+    },
+    {
+      "Id": 18,
+      "DepartmentName": "Accounting",
+      "Short": "ACC"
+    },
+    {
+      "Id": 19,
+      "DepartmentName": "Business Management",
+      "Short": "BA"
+    },
+    {
+      "Id": 20,
+      "DepartmentName": "General Administration",
+      "Short": "PA"
+    },
+    {
+      "Id": 21,
+      "DepartmentName": "Optional 1",
+      "Short": "HUM"
+    },
+    {
+      "Id": 22,
+      "DepartmentName": "Optional 2",
+      "Short": "Sci"
+    },
+    {
+      "Id": 23,
+      "DepartmentName": "Doctor of Medicine",
+      "Short": "M"
+    },
+    {
+      "Id": 24,
+      "DepartmentName": "Pharmacy",
+      "Short": "M"
+    },
+    {
+      "Id": 25,
+      "DepartmentName": "Architecture engineering",
+      "Short": "AE"
+    },
+    {
+      "Id": 26,
+      "DepartmentName": "Mechanical engineering technology and design",
+      "Short": "ME"
+    },
+    {
+      "Id": 27,
+      "DepartmentName": "Computer information systems",
+      "Short": "CIS"
+    },
+    {
+      "Id": 28,
+      "DepartmentName": "Business information technology",
+      "Short": "SCI"
+    },
+    {
+      "Id": 29,
+      "DepartmentName": "Cyber security",
+      "Short": "CYS"
+    },
+    {
+      "Id": 30,
+      "DepartmentName": "Data science and artificial intelligence",
+      "Short": "DA"
+    },
+    {
+      "Id": 31,
+      "DepartmentName": "Medical and biophysics",
+      "Short": "MPHY"
+    },
+    {
+      "Id": 32,
+      "DepartmentName": "Biology",
+      "Short": "BIO"
+    },
+    {
+      "Id": 33,
+      "DepartmentName": "Earth and Environmental Sciences",
+      "Short": "AG"
+    },
+    {
+      "Id": 34,
+      "DepartmentName": "Economics of finance and business",
+      "Short": "BF"
+    },
+    {
+      "Id": 35,
+      "DepartmentName": "French language",
+      "Short": "FREN"
+    },
+    {
+      "Id": 36,
+      "DepartmentName": "Translation",
+      "Short": "TRA"
+    },
+    {
+      "Id": 37,
+      "DepartmentName": "Hebrew",
+      "Short": "HEB"
+    },
+    {
+      "Id": 38,
+      "DepartmentName": "Turkish language",
+      "Short": "TUR"
+    },
+    {
+      "Id": 39,
+      "DepartmentName": "History",
+      "Short": "HIST"
+    },
+    {
+      "Id": 40,
+      "DepartmentName": "Geography",
+      "Short": "GEO"
+    },
+    {
+      "Id": 41,
+      "DepartmentName": "Political Science",
+      "Short": "PS"
+    },
+    {
+      "Id": 42,
+      "DepartmentName": "Sociology and Social Work",
+      "Short": "SOC"
+    },
+    {
+      "Id": 43,
+      "DepartmentName": "Class teacher",
+      "Short": "CURI"
+    },
+    {
+      "Id": 44,
+      "DepartmentName": "psychological guidance",
+      "Short": "PSYC"
+    },
+    {
+      "Id": 45,
+      "DepartmentName": "Raising a child",
+      "Short": "EDAF"
+    },
+    {
+      "Id": 46,
+      "DepartmentName": "Jurisprudence and its principles",
+      "Short": "FQH"
+    },
+    {
+      "Id": 47,
+      "DepartmentName": "Religion basics",
+      "Short": "ASL"
+    },
+    {
+      "Id": 48,
+      "DepartmentName": "Islamic studies",
+      "Short": "ISS"
+    },
+    {
+      "Id": 49,
+      "DepartmentName": "Economics and Islamic banking",
+      "Short": "IEB"
+    },
+    {
+      "Id": 50,
+      "DepartmentName": "Archaeology",
+      "Short": "ARCH"
+    },
+    {
+      "Id": 51,
+      "DepartmentName": "Anthropologist",
+      "Short": "ANTH"
+    },
+    {
+      "Id": 52,
+      "DepartmentName": "Maintenance of heritage resources and management",
+      "Short": "CON"
+    },
+    {
+      "Id": 53,
+      "DepartmentName": "Tourism management",
+      "Short": "TOUR"
+    },
+    {
+      "Id": 54,
+      "DepartmentName": "Tourist guides",
+      "Short": "TOUR"
+    },
+    {
+      "Id": 55,
+      "DepartmentName": "Hotel management",
+      "Short": "HOTL"
+    },
+    {
+      "Id": 56,
+      "DepartmentName": "Public relations and advertising",
+      "Short": "PRA"
+    },
+    {
+      "Id": 57,
+      "DepartmentName": "Journalism",
+      "Short": "JRN"
+    },
+    {
+      "Id": 58,
+      "DepartmentName": "Radio and television",
+      "Short": "RTV"
+    },
+    {
+      "Id": 59,
+      "DepartmentName": "physical education",
+      "Short": "PE"
+    }
+  ]
+}

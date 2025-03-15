@@ -1,0 +1,16 @@
+{
+  "SemesterList": [
+    {
+      "Id": 1,
+      "SemesterName": "First Semester"
+    },
+    {
+      "Id": 2,
+      "SemesterName": "Second Semester"
+    },
+    {
+      "Id": 3,
+      "SemesterName": "Summer Semester"
+    }
+  ]
+}

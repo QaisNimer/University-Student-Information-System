@@ -1,0 +1,269 @@
+﻿@{
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<div class="app-content content">
+    <div class="content-overlay"></div>
+    <div class="header-navbar-shadow"></div>
+    <div class="content-wrapper">
+        <div class="content-header row">
+            <div class="content-header-left col-md-9 col-12 mb-2">
+                <div class="row breadcrumbs-top">
+                    <div class="col-12">
+                        <h2 class="content-header-title float-left mb-0">GPACalculator</h2>
+                        <div class="breadcrumb-wrapper">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item">
+                                    <a href="@Url.Action("Index","DashBoard")">DashBoard</a>
+                                </li>
+                                <li class="breadcrumb-item">
+                                    <a href="@Url.Action("GPACalculator","Course")">GPA-Calculator</a>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="table-responsive">
+            <div class="col-12">
+                <div class="card">
+                    <div class="row mt-5 mb-1">
+                        <div class="col-md-10">
+                                 <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-row mb-3 ml-1 mr-1">
+                                            <div class="col-md-4">
+                                                <label for="courseMarks@i">Course 1 Marks:</label>
+                                                <input type="number" onkeyup="calculatePoint(1)"  class="form-control courseMarks" id="courseMarks1" name="courseMarks1" placeholder="Enter Marks" data-index="1" />
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="creditHours@i">Credit Hours:</label>
+                                            <input type="number" class="form-control creditHours" onkeyup="calculatePoint(1)" id="creditHours1" name="creditHours1" placeholder="Enter Credit Hours" data-index="1" />
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="totalPoints@i">Total Points:</label>
+                                                <input type="number" class="form-control totalPoints" id="totalPoints1" name="totalPoints1" placeholder="Total Points" readonly />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-row mb-3 ml-1 mr-1">
+                                            <div class="col-md-4">
+                                                <label for="courseMarks@i">Course 2 Marks:</label>
+                                                <input type="number" onkeyup="calculatePoint(2)" class="form-control courseMarks" id="courseMarks2" name="courseMarks2" placeholder="Enter Marks" data-index="2" />
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="creditHours@i">Credit Hours:</label>
+                                            <input type="number" class="form-control creditHours" onkeyup="calculatePoint(2)" id="creditHours2" name="creditHours2" placeholder="Enter Credit Hours" data-index="2" />
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="totalPoints@i">Total Points:</label>
+                                                <input type="number" class="form-control totalPoints" id="totalPoints2" name="totalPoints2" placeholder="Total Points" readonly />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-row mb-3 ml-1 mr-1">
+                                        <div class="col-md-4">
+                                            <label for="courseMarks@i">Course 3 Marks:</label>
+                                            <input type="number" onkeyup="calculatePoint(3)" class="form-control courseMarks" id="courseMarks3" name="courseMarks3" placeholder="Enter Marks" data-index="3" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="creditHours@i">Credit Hours:</label>
+                                            <input type="number" class="form-control creditHours" onkeyup="calculatePoint(3)" id="creditHours3" name="creditHours3" placeholder="Enter Credit Hours" data-index="3" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="totalPoints@i">Total Points:</label>
+                                            <input type="number" class="form-control totalPoints" id="totalPoints3" name="totalPoints3" placeholder="Total Points" readonly />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                             <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-row mb-3 ml-1 mr-1">
+                                        <div class="col-md-4">
+                                            <label for="courseMarks@i">Course 4 Marks:</label>
+                                            <input type="number" onkeyup="calculatePoint(4)" class="form-control courseMarks" id="courseMarks4" name="courseMarks4" placeholder="Enter Marks" data-index="4" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="creditHours@i">Credit Hours:</label>
+                                            <input type="number" class="form-control creditHours" onkeyup="calculatePoint(4)" id="creditHours4" name="creditHours4" placeholder="Enter Credit Hours" data-index="4" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="totalPoints@i">Total Points:</label>
+                                            <input type="number" class="form-control totalPoints" id="totalPoints4" name="totalPoints4" placeholder="Total Points" readonly />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-row mb-3 ml-1 mr-1">
+                                        <div class="col-md-4">
+                                            <label for="courseMarks@i">Course 5 Marks:</label>
+                                            <input type="number" onkeyup="calculatePoint(5)" class="form-control courseMarks" id="courseMarks5" name="courseMarks5" placeholder="Enter Marks" data-index="5" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="creditHours@i">Credit Hours:</label>
+                                            <input type="number" class="form-control creditHours" onkeyup="calculatePoint(5)" id="creditHours5" name="creditHours5" placeholder="Enter Credit Hours" data-index="5" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="totalPoints@i">Total Points:</label>
+                                            <input type="number" class="form-control totalPoints" id="totalPoints5" name="totalPoints5" placeholder="Total Points" readonly />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-row mb-3 ml-1 mr-1">
+                                        <div class="col-md-4">
+                                            <label for="courseMarks@i">Course 6 Marks:</label>
+                                            <input type="number" onkeyup="calculatePoint(6)" class="form-control courseMarks" id="courseMarks6" name="courseMarks6" placeholder="Enter Marks" data-index="6" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="creditHours@i">Credit Hours:</label>
+                                            <input type="number" class="form-control creditHours" onkeyup="calculatePoint(6)" id="creditHours6" name="creditHours6" placeholder="Enter Credit Hours" data-index="6" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="totalPoints@i">Total Points:</label>
+                                            <input type="number" class="form-control totalPoints" id="totalPoints6" name="totalPoints6" placeholder="Total Points" readonly />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-row mb-3 ml-1 mr-1">
+                                        <div class="col-md-4">
+                                            <label for="courseMarks@i">Course 5 Marks:</label>
+                                            <input type="number" onkeyup="calculatePoint(7)" class="form-control courseMarks" id="courseMarks7" name="courseMarks7" placeholder="Enter Marks" data-index="7" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="creditHours@i">Credit Hours:</label>
+                                            <input type="number" class="form-control creditHours" onkeyup="calculatePoint(7)" id="creditHours7" name="creditHours7" placeholder="Enter Credit Hours" data-index="7" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="totalPoints@i">Total Points:</label>
+                                            <input type="number" class="form-control totalPoints" id="totalPoints7" name="totalPoints2" placeholder="Total Points" readonly />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-row mb-3 ml-1 mr-1">
+                                        <div class="col-md-4">
+                                            <label for="courseMarks@i">Course 5 Marks:</label>
+                                            <input type="number" onkeyup="calculatePoint(8)" class="form-control courseMarks" id="courseMarks8" name="courseMarks8" placeholder="Enter Marks" data-index="8" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="creditHours@i">Credit Hours:</label>
+                                            <input type="number" class="form-control creditHours" onkeyup="calculatePoint(8)" id="creditHours8" name="creditHours8" placeholder="Enter Credit Hours" data-index="8" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="totalPoints@i">Total Points:</label>
+                                            <input type="number" class="form-control totalPoints" id="totalPoints8" name="totalPoints8" placeholder="Total Points" readonly />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group ml-1 mr-1">
+                                    <dnt-captcha asp-captcha-generator-max="999999"
+                                                 asp-captcha-generator-min="111111"
+                                                 asp-captcha-generator-language="English"
+                                                 asp-captcha-generator-display-mode="ShowDigits"
+                                                 asp-use-relative-urls="true"
+                                                 asp-placeholder="Enter Captcha"
+                                                 asp-font-name="Tahoma"
+                                                 asp-font-size="60"
+                                                 asp-fore-color="#333333"
+                                                 asp-validation-error-message="Please Insert Valid Captcha"
+                                                 asp-back-color="#ccc"
+                                                 asp-text-box-class="text-box form-control"
+                                                 asp-text-box-template="<span class='input-group-prepend'><span class='form-group-text'> </span></span>{0}"
+                                                 asp-refresh-button-class="fa fa-refresh btn-sm"
+                                                 asp-use-noise="false" />
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group ml-1 mr-1">
+                                    <button type="button" onclick="GPACALCULATOR()" class="btn btn-primary mr-1" id="calculateButton">Calculate</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade text-left" id="small" tabindex="-1" role="dialog" aria-labelledby="myModalLabel19" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="myModalLabel19">Total GPA</h4>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+              <h1 id="GPATotal" style="text-align:center"></h1>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-dismiss="modal">Accept</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script>
+        function calculatePoint(index) {
+            debugger
+            const marks = parseFloat(document.getElementById('courseMarks' + index).value) || 0;
+            const creditHours = parseFloat(document.getElementById('creditHours' + index).value) || 0;
+            const totalPoints = marks * creditHours;
+
+            document.getElementById('totalPoints' + index).value = totalPoints;
+        }
+        function GPACALCULATOR() {
+            var totalPoints1 = parseFloat(document.getElementById('totalPoints1').value) || 0;
+            var totalPoints2 = parseFloat(document.getElementById('totalPoints2').value) || 0;
+            var totalPoints3 = parseFloat(document.getElementById('totalPoints3').value) || 0;
+            var totalPoints4 = parseFloat(document.getElementById('totalPoints4').value) || 0;
+            var totalPoints5 = parseFloat(document.getElementById('totalPoints5').value) || 0;
+            var totalPoints6 = parseFloat(document.getElementById('totalPoints6').value) || 0;
+            var totalPoints7 = parseFloat(document.getElementById('totalPoints7').value) || 0;
+            var totalPoints8 = parseFloat(document.getElementById('totalPoints8').value) || 0;
+            var sumOftotalPoints = totalPoints1 + totalPoints2 + totalPoints3 + totalPoints4 + totalPoints5 + totalPoints6 + totalPoints7 + totalPoints8
+
+            var creditHours1 = parseFloat(document.getElementById('creditHours1').value) || 0;
+            var creditHours2 = parseFloat(document.getElementById('creditHours2').value) || 0;
+            var creditHours3 = parseFloat(document.getElementById('creditHours3').value) || 0;
+            var creditHours4 = parseFloat(document.getElementById('creditHours4').value) || 0;
+            var creditHours5 = parseFloat(document.getElementById('creditHours5').value) || 0;
+            var creditHours6 = parseFloat(document.getElementById('creditHours6').value) || 0;
+            var creditHours7 = parseFloat(document.getElementById('creditHours7').value) || 0;
+            var creditHours8 = parseFloat(document.getElementById('creditHours8').value) || 0;
+            debugger
+            var sumOfcreditHours = creditHours1 + creditHours2 + creditHours3 + creditHours4 + creditHours5 + creditHours6 + creditHours7 + creditHours8
+
+            document.getElementById('GPATotal').innerText = parseFloat(sumOftotalPoints / sumOfcreditHours);
+            $('#small').modal('show');
+        }
+        
+    </script>
+}
